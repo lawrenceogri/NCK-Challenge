@@ -5,6 +5,7 @@
 <head>
     <title>Landing Page | Index</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,8 +24,14 @@
             <h2>Choose your method of payment</h2>
             <div class="card">
                 <p>CARD NUMBER</p>
-                <p></p>
-                <img >
+                <p id="display-card-number" style="height: 30px;"></p> 
+                <img>
+                <p>EXPIRATION DATE</p>
+                <p>03/24</p>
+                <p>John Doe</p>
+                <div class="mc">
+                <img src="images/mc.svg" width="50">
+            </div>
 
             </div>
         </div>
@@ -36,17 +43,22 @@
                 <input type="radio">
                 <img class="paypal" src="images/paypal.png">
             </div>
-            <label>Credit card number</label>
-            <input type="number">
-            <label>Expiration date</label>
-            <input type="text">
-            <label>Security code</label>
-            <input type="number">
-            <label>Postal code</label>
-            <input type="number">
-            <input type="radio">
-            <button>Add card</button>
-        </div>
+            <div class="card-details">
+                <label >Credit card number</label>
+                <input id="card-number" type="text">
+                <label>Security code</label>
+                <input type="text">
+                
+            </div>
+
+            <div class="card-details-2">
+                <label>Expiration date</label>
+                <input type="text">
+                <label>Postal code</label>
+                <input type="text">
+            </div>
+            <label><input type="radio"> Use this card for next purchase</label>
+            <button class="add-card">Add card</button>
     </section>
     <hr>
     <div>

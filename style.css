@@ -59,21 +59,22 @@ h2{
 section{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
 .card{
     width: 65%;
     height: 230px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background: rgb(250,70,107);
 background: linear-gradient(123deg, rgba(250,70,107,1) 0%, rgba(90,91,233,1) 100%);
+padding-top: 10px;
 }
 
 .left, .right{
     width: 49%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
  
 }
@@ -81,7 +82,7 @@ background: linear-gradient(123deg, rgba(250,70,107,1) 0%, rgba(90,91,233,1) 100
 .logo{
     width: 50%;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-right: 0;
     margin-left: auto;
     margin-top: 25px;
@@ -92,6 +93,9 @@ background: linear-gradient(123deg, rgba(250,70,107,1) 0%, rgba(90,91,233,1) 100
 * .card{
     color: white;
     border-radius: 4px;
+    font-size: 12px;
+    font-family: consolas;
+    padding-left: 10px;
 }
 
 .visa{
@@ -136,4 +140,44 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
+}
+
+.card-details, .card-details-2{
+    /* border: 1px solid black; */
+    width: 49%;
+    display: inline-block;
+}
+
+.card-details *, .card-details-2 *{
+    display: block;
+}
+
+button{
+    display: block;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+input{
+    background: rgb(233, 230, 230);
+    padding: 8px;
+    margin-bottom: 25px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+label{
+    padding-bottom: 10px;
+}
+
+.add-card{
+    width: 100%;
+}
+
+.mc{
+    text-align: right;
+    margin-right: 30px;
 }
