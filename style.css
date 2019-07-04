@@ -1,0 +1,139 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+.one{
+    margin-top: 80px;
+}
+
+.av{
+    border-radius: 50%;
+    width: 50px;
+}
+
+header ul{
+    width: 65%;
+    /* border: 1px solid black; */
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 0;
+   
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    width: 25%;
+    /* border: 1px solid black; */
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+
+hr{
+    width: 98%;
+}
+
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 14px;
+    color: lightgray;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+.card{
+    width: 65%;
+    height: 230px;
+    border: 1px solid black;
+    background: rgb(250,70,107);
+background: linear-gradient(123deg, rgba(250,70,107,1) 0%, rgba(90,91,233,1) 100%);
+}
+
+.left, .right{
+    width: 49%;
+    border: 1px solid black;
+    display: inline-block;
+ 
+}
+
+.logo{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+* .card{
+    color: white;
+    border-radius: 4px;
+}
+
+.visa{
+    width: 40px;
+}
+
+
+
+.discover{
+    padding-right: 20px;
+    padding-bottom: 5px;
+    width: 60px;
+}
+
+.paypal{
+    width: 60px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:rgb(28, 103, 224);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
