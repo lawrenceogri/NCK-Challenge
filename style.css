@@ -21,7 +21,7 @@ body{
 }
 
 header ul{
-    width: 65%;
+    width: 55%;
     /* border: 1px solid black; */
     margin-right: 0;
     margin-left: auto;
@@ -35,6 +35,7 @@ header ul li{
     width: 25%;
     /* border: 1px solid black; */
     font-size: 16px;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -64,7 +65,7 @@ section{
 }
 
 .card{
-    width: 65%;
+    width: 32em;
     padding-left: 10px;
     height: 255px;
     /* border: 1px solid black; */
@@ -94,7 +95,7 @@ padding-top: 10px;
 * .card{
     color: white;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 13px;
     font-family: consolas;
     margin: 0;
     
@@ -116,43 +117,19 @@ padding-top: 10px;
     width: 60px;
 }
 
-input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
-
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color:rgb(28, 103, 224);
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
 
 .card-details, .card-details-2{
     /* border: 1px solid black; */
-    width: 49%;
+    width: fit-content;
     display: inline-block;
 }
 
 .card-details *, .card-details-2 *{
     display: block;
-    
+}
+
+.card-details{
+    margin-right: 80px;
 }
 
 
@@ -179,8 +156,12 @@ label{
 }
 
 .add-card{
-    width: 80%;
+    width: 100%;
     margin-bottom: 5px;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 18px;
+
 }
 
 
@@ -209,6 +190,10 @@ span{
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 18px;
+
     /* border: 1px solid black; */
 
 }
@@ -224,17 +209,30 @@ span{
     letter-spacing: 1px;
 }
 
+.mastercard{
+    /* border: 1px solid black; */
+    margin-left: 17em;
+}
+
 .inline{
     display: inline-block;
     width: fit-content;
    
 }
 
-.mastercard{
-    margin-left: 18em;
-}
+
 
 .exp{
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+input[type='text']{
+    width: 250px;
+    padding: 12px;
+    border-radius: 1.5px;
+}
+
+input[type='text']:focus{
+    outline: 1px solid rgb(233, 230, 230);
 }
